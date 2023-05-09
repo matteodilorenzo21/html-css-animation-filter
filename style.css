@@ -1,3 +1,4 @@
+/* EFFECT #1 */
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -9,6 +10,9 @@
     background-color: red;
 }
 
+
+
+/* EFFECT #2 */
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -20,6 +24,9 @@
     width: 100%;
 }
 
+
+
+/* EFFECT #3 */
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -31,6 +38,9 @@
     border-radius: 100%;
 }
 
+
+
+/* EFFECT #4 */
 .ex-4-square {
     width: 100px;
     height: 100px;
@@ -42,6 +52,9 @@
     opacity: 0;
 }
 
+
+
+/* EFFECT #5 */
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -58,17 +71,76 @@
     transform: scale(0.5);
 }
 
+
+
+/* COMMON IMAGE'S VALUE #6, #7, #8 */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
 
+
+
+/* EFFECT #6 */
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+
+
+
+/* EFFECT #7 */
+.ex-7-img {
+    transition: 2s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(0.5) sepia(0.8);
+}
+
+
+
+/* EFFECT #8 */
+.ex-8-img {
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(0.5) sepia(0.8);
+    border-radius: 25px;
+}
+
+
+
+/* EFFECT #9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
 }
+
+.ex-9-img:hover {
+    filter: grayscale(0.5) sepia(0.8);
+    border-radius: 25px;
+    transform: scale(1.5);
+}
+
+
+
+/* EFFECT #10 */
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear infinite;
 }
+
+
+
+
 .ex-11-icon {
     font-size: 60px;
 }
